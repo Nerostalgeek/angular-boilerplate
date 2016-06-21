@@ -6,7 +6,7 @@ const chokidar = require('chokidar');
 const WebpackDevServer = require('webpack-dev-server');
 const compiler = webpack(webpackConfig);
 const hotMiddleware = require('webpack-hot-middleware')(compiler);
-const spinner = ora(`[CLIENT] Live-reload app ...\n`);
+const spinner = ora(`[CLIENT] Serving app ...\n`);
 require('shelljs/global');
 env.NODE_ENV = 'dev';
 

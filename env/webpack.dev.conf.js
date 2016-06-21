@@ -3,7 +3,7 @@ const webpackConfig = require('./webpack.base.conf');
 const config = require('./config');
 
 Object.keys(webpackConfig.entry).forEach(name => {
-  webpackConfig.entry[name] = ['./env/client/dev-client'].concat(webpackConfig.entry[name]);
+  webpackConfig.entry[name] = ['./env/dev-client'].concat(webpackConfig.entry[name]);
 });
 
 webpackConfig.devtool = '#eval-source-map';

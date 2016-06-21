@@ -4,8 +4,8 @@
   "description": "Angular 1.5 in component way",
   "scripts": {
     "update": "npm-check-updates -u && npm update",
-    "build": "node ./env/client/build.js",
-    "dev": "node ./env/client/dev-server.js"
+    "build": "node ./env/build.js",
+    "dev": "node ./env/dev-server.js"
   },
   "author": "Meillet Robin",
   "license": "MIT",

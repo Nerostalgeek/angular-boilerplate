@@ -10,7 +10,7 @@ import ROUTES from './constant/routes';
 const moduleName = 'app';
 
 angular
-    .module(moduleName, [router, materialize, services, directives, components])
+    .module(moduleName, [router, materialize, services, components])
     .config(($stateProvider, $locationProvider, $urlRouterProvider) => {
       $locationProvider.html5Mode(true);
       $urlRouterProvider.otherwise(ROUTES.default);
