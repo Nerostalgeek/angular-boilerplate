@@ -11,7 +11,7 @@ module.exports = {
     publicPath: '',
   },
   port: 3002,
-  base: './src/client/',
+  base: './src/',
   support: ['last 2 versions'],
   forceReload: ['./src/index.html'],
 };
