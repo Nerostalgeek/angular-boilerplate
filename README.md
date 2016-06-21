@@ -1,4 +1,4 @@
-````# Angular-boilerplate
+# Angular-boilerplate
 
 Angular 1.5 with WebPack boilerplate.
 
@@ -10,4 +10,3 @@ cd anguler-boilerplate/
 npm i
 mv src/client/constant/config.example.js src/client/constant/config.js
 ```
-````
