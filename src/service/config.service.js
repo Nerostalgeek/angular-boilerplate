@@ -40,4 +40,6 @@ class ConfigService {
   }
 }
 
+ConfigService.factory.$inject = [];
+
 export default ConfigService;
