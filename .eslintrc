@@ -1,7 +1,17 @@
 {
   "extends": "airbnb",
   "rules": {
-    "no-param-reassign": [0],
-    "no-console": [0]
+    "no-console": [0],
+    "no-param-reassign": [0]
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread":true
+    }
   }
 }
