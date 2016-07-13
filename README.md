@@ -10,3 +10,15 @@ cd anguler-boilerplate/
 npm i
 cp src/client/constant/config.example.js src/client/constant/config.js
 ```
+
+# Start dev server :
+
+```sh
+npm run dev
+```
+
+# Start build process for production :
+
+```sh
+npm run build
+```
