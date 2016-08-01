@@ -18,7 +18,7 @@ angular
       Object
           .keys(ROUTES)
           .filter(route => route !== 'default')
-          .forEach(route => $stateProvider.state(route, ROUTES[route]));
+          .forEach(route => $stateProvider.state(ROUTES[route].name, ROUTES[route]));
     });
 
 export default moduleName;
