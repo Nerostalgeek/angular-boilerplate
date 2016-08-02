@@ -8,9 +8,22 @@ Angular 1 (latest version) in component way with best practices.
 - Hot-Reload, nice server with WebPack for development.
 - Architecture make for rapid and fire project.
 - You can use Stylus or CSS, as you want.
+- Autoprefixer, you don't need CSS vendor like -webkit
 - ES6 + ES7 with Babel stage-0 : no limit (async/await, destructuration, generator, ...).
 
 If you understand it, you can easily move to Angular 2.
+
+# Start dev server :
+
+```sh
+npm run dev
+```
+
+# Start build process for production :
+
+```sh
+npm run build
+```
 
 # Installation
 
@@ -135,15 +148,3 @@ Next release will be push soon with :
 - Full SASS/SCSS support
 - Jade support
 - Unit test + E2E with Protractor
-
-# Start dev server :
-
-```sh
-npm run dev
-```
-
-# Start build process for production :
-
-```sh
-npm run build
-```
