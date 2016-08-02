@@ -1,23 +1,23 @@
-@import '../node_modules/materialize-css/dist/css/materialize.css';
+// @import '../node_modules/materialize-css/dist/css/materialize.css'; <= you can use "npm install materialize-css" and do it
 
-background = #27332c
+background = #27332c // you can set variable
 
 /**
 * Base style
 */
 
-*, *:before, *:after // reset
+*, *:before, *:after // reset box system for border
   box-sizing border-box
 
-html, body
+html, body // full height when you don't have content
   height 100%
 
 body // base
-  background-color background
+  background-color background // use variable
   color #fff
   font-family 'Open Sans', sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
+  -webkit-font-smoothing antialiased // smooth font on OSX
+  -moz-osx-font-smoothing grayscale // smooth font on OSX
 
 textarea:hover, // fix outline, we don't need it in this case
 input:hover,
@@ -48,6 +48,9 @@ button:hover
   rgba(255, 255, 255, .2) 75%,
   transparent 75%,
   transparent)
+
+a:visited // style visited link for reading
+  color #fff
 
 input:-webkit-autofill, // remove autofill yellow background and black text in webkit
 input:-webkit-autofill:hover,

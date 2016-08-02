@@ -1,11 +1,12 @@
-const SERVICES = new Map();
+import inject from 'ng-inject';
 
+@inject('$state')
 class NetflixHome {
-  constructor($state) {
-    SERVICES.set('$state', $state);
+  constructor() {
+    console.log('Hello, this is constructor of NetflixHome component !');
+
+    this.message = 'Hello World ! This is NetflixHome component !';
   }
 }
-
-NetflixHome.$inject = ['$state'];
 
 export default NetflixHome;

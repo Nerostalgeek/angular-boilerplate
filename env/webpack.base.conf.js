@@ -15,7 +15,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'eslint',
-        exclude: /(node_modules|libs|env|dist|daemon)/,
+        exclude: /(node_modules|libs|env|dist)/,
       },
     ],
     loaders: [
@@ -35,12 +35,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel',
         include: root,
-        exclude: /node_modules|libs|env|dist|daemon/,
-        query: {
-          presets: ['es2015', 'stage-2'],
-          plugins: ['transform-runtime'],
-          comments: false,
-        },
+        exclude: /(node_modules|libs|env|dist)/,
       },
       {
         test: /\.(png|jpg|gif|svg|ico|woff2?|eot|ttf)(\?.*)?$/,

@@ -5,8 +5,8 @@ const CONFIG = new Map();
 class ConfigService {
   constructor() {
     Object
-        .keys(CONF)
-        .map(key => CONFIG.set(key, CONF[key]));
+      .keys(CONF)
+      .map(key => CONFIG.set(key, CONF[key]));
   }
 
   /**
@@ -19,7 +19,7 @@ class ConfigService {
   }
 
   /**
-   * Internal logger
+   * Internal logger (never use in production)
    * @param message
    * @returns {ConfigService}
    */
@@ -32,6 +32,14 @@ class ConfigService {
   }
 
   /**
+   * Exception catcher
+   * Use it in Promise (with $http) to catch error globally and dispatch them
+   */
+  catcher(...errors) {
+    console.error('Some exception happen : ', ...errors);
+  }
+
+  /**
    * Factory of this class
    * @returns {ConfigService}
    */
@@ -39,7 +47,5 @@ class ConfigService {
     return new ConfigService();
   }
 }
-
-ConfigService.factory.$inject = [];
 
 export default ConfigService;

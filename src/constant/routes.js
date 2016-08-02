@@ -1,4 +1,4 @@
-export const ROUTES = {
+export default {
   default: '/',
   login: {
     name: 'login',
@@ -11,5 +11,3 @@ export const ROUTES = {
     template: '<netflix-home></netflix-home>',
   },
 };
-
-export default ROUTES;

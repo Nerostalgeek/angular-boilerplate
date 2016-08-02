@@ -1,10 +1,9 @@
 require('shelljs/global');
-env.NODE_ENV = 'production';
 
 const ora = require('ora');
 const webpack = require('webpack');
 const config = require('./webpack.prod.conf');
-const spinner = ora(`[CLIENT] Building app ...`);
+const spinner = ora(`[Angular] Building app ...`);
 spinner.start();
 
 rm('-rf', config.output.path);

@@ -6,9 +6,8 @@ const chokidar = require('chokidar');
 const WebpackDevServer = require('webpack-dev-server');
 const compiler = webpack(webpackConfig);
 const hotMiddleware = require('webpack-hot-middleware')(compiler);
-const spinner = ora(`[CLIENT] Serving app ...\n`);
+const spinner = ora(`[Angular] Serving app ...\n`);
 require('shelljs/global');
-env.NODE_ENV = 'dev';
 
 const refresh = path => {
   console.log('* ' + path + ' changed');

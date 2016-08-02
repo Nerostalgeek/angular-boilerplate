@@ -6,8 +6,8 @@ import NetflixHome from './component/netflix-home/netflix-home.component';
 const moduleName = 'app.components';
 
 angular
-    .module(moduleName, [])
-    .component('netflixLogin', NetflixLogin)
-    .component('netflixHome', NetflixHome);
+  .module(moduleName, [])
+  .component('netflixLogin', NetflixLogin)
+  .component('netflixHome', NetflixHome);
 
 export default moduleName;
