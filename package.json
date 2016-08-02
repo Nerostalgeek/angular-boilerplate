@@ -1,6 +1,6 @@
 {
   "name": "angular-boilerplate",
-  "version": "2.0.2",
+  "version": "2.0.4",
   "description": "Angular 1.5 in component way with best practices",
   "scripts": {
     "build": "node ./env/build.js",
