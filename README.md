@@ -29,14 +29,14 @@ npm run build
 
 ```sh
 git clone https://github.com/kMeillet/angular-boilerplate
-cd anguler-boilerplate/
+cd angular-boilerplate/
 npm i
 ```
 
 Now, copy configuration :
 
 ```sh
-cp src/client/constant/config.example.js src/client/constant/config.js
+cp src/constant/config.example.js src/constant/config.js
 ```
 
 Make your own "config.js" file and edit some constant.
