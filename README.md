@@ -90,11 +90,18 @@ Component is re-usable, encourage good practice : component have style, HTML and
 
 So, when you say "Hey, i need some UI or new page", you need a new component.
 
-In Angular, a component is HTML tag. <netflix-home></netflix-home> represent the netflix-home component.
+In Angular, component are HTML tag.
+
+ ```html
+ <netflix-home></netflix-home>
+```
+
+Represent the netflix-home component.
 
 All components are register on "app.components.js" on "src" directory.
 
 ```js
+// ...
 .component('netflixHome', NetflixHome);
 ````
 
