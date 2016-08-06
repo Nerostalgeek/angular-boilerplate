@@ -2,14 +2,14 @@
 
 Angular 1 (latest version) in component way with best practices.
 
-- Best practices (controllerAs, component, injection, factory only, ...).
+- ES6 + ES7 with Babel stage-0 : no limit (async/await, destructuring, class property, generator, ...).
 - EsLint with AirBnB JavaScript standard, for better code in team.
-- Full minified build with WebPack for production.
+- Best practices (controllerAs, component, injection, factory only, ...).
+- Minified build with WebPack for production.
 - Hot-Reload, nice server with WebPack for development.
 - Architecture make for rapid and fire project.
 - You can use Stylus or CSS, as you want.
 - Autoprefixer, you don't need CSS vendor like -webkit.
-- ES6 + ES7 with Babel stage-0 : no limit (async/await, destructuration, generator, ...).
 
 If you understand it, you can easily move to Angular 2.
 
@@ -67,16 +67,16 @@ You can make your own resolving files (for filters or directives).
 
 If you open "src/component", you will see 2 starter component :
 
-- netflix-home : the prefix "netflix" is a fake, you can use any prefix (name of your app is better) to avoid colision
+- netflix-home : the prefix "netflix" is a fake, you can use any prefix (name of your app is better) to avoid collision
 - netflix-login : a second component
 
 Component are directive with some forced parameters.
 
 It's very easy to understand component for a developer, so imagine your application homepage.
 
-A component is a part of this homepage, they can be navbar or button, they have state (hover, clicked, focus, ...).
+A component is a part of this homepage, they can be a navbar or button, they have state (hover, clicked, focus, ...).
 
-And then, a component can be a entiere page, and depends of some sub-components.
+And then, a component can be a page, and depends of some sub-components.
 
 netflix-home and netflix-login are "page" component, they need some sub-components to be great like :
 
@@ -113,13 +113,17 @@ So, how we can say "Hello, when you are in /auth, show netflix-login component !
 
 Open "src/constant/routes.js" : this object represent all routes of your application.
 
-Template are ***always*** calling a component !
+Template are ***always*** calling a page component !
 
 "Component routing pattern" is used in Angular 2.
 
 # How i can use $scope
 
-You don't use $scope to bind data to view.
+You don't use $scope service to bind data to view, we use class in controller and they have scope (this).
+
+All property in your class instance if available in your view.
+
+You can declare your class property on the top, this is ES7 feature.
 
 Use "this" in controller and "vm" in View, check Netflix examples component.
 
