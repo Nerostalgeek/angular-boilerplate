@@ -119,9 +119,9 @@ Template are ***always*** calling a page component !
 
 # How i can use $scope
 
-You don't use $scope service to bind data to view, we use class in controller and they have scope (this).
+You don't use $scope service to bind data to view, we use class in controller and they have local scope (this).
 
-All property in your class instance if available in your view.
+All property in your class instance is available in your view.
 
 You can declare your class property on the top, this is ES7 feature.
 
